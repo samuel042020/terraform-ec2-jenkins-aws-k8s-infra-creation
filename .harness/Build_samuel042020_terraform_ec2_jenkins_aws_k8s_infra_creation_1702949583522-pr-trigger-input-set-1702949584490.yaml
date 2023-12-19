@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_samuel042020_terraform_ec2_jenkins_aws_k8s_infra_creation_1702949583522-pr-trigger-input-set
+  identifier: Build_samuel042020_terraform_ec2_jenkins_aws_k8s_infra_creation_1702949583522prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_samuel042020_terraform_ec2_jenkins_aws_k8s_infra_creation_1702949583522
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
