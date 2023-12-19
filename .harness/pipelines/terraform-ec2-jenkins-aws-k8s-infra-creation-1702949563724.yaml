@@ -1,0 +1,33 @@
+pipeline:
+  identifier: Build_samuel042020_terraform_ec2_jenkins_aws_k8s_infra_creation_1702949583522
+  name: Build terraform-ec2-jenkins-aws-k8s-infra-creation
+  orgIdentifier: default
+  projectIdentifier: default_project
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github_OAuth_1702949495566
+        repoName: samuel042020/terraform-ec2-jenkins-aws-k8s-infra-creation
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
